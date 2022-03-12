@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="stylesheets/all.css">
+</head>
+
+<body>
+    <div class="fixed-top">
+        <!-- header -->
+        <header class="bg-dark">
+            <div class="d-flex position-relative align-items-center">
+                <h1 class="mb-0">
+                    <img class="col-6 ms-4" src="images/header/LOGO.png" alt="">
+                </h1>
+
+                <div>
+                    <button type="button"
+                        class="btn btn-login btn-color border-0 text-white rounded-pill px-4 py-1 mt-2 ms-5">
+                        登入
+                    </button>
+                </div>
+                <!-- asideMenu -->
+                <!-- hamberger -->
+                <a href="#" class="menu_btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+                    aria-controls="offcanvasScrolling"></a>
+                <!-- menu -->
+                <nav class="nav offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+                    id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                    <div class="offcanvas-header bg-dark">
+                        <h5 class="offcanvas-title text-white" id="offcanvasScrollingLabel">
+                            text0001<br>
+                            <i class="bi bi-coin"><span class="h6"> 4,600.00(TWD)</span></i>
+                        </h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body bg-dark">
+                        <hr class="text-white">
+                        <ul class="list-unstyled bg-dark ms-4">
+                            <li class="mt-3"><a class="text-decoration-none text-color" href="#">出納櫃台</a></li>
+                            <li class="mt-3"><a class="text-decoration-none text-color" href="#">修改密碼</a></li>
+                            <li class="mt-3"><a class="text-decoration-none text-color" href="#">遊戲介紹</a></li>
+                            <li class="mt-3 "><a class="text-decoration-none text-color" href="#">聯絡我們</a></li>
+                            <li class="text-center mt-10">
+                                <button type="button" class="btn text-white btn-color border-0 rounded-pill px-5 py-1">
+                                    登出
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <hr size="5px" class="text-white my-1 hr-style">
+            <p class="text-white mb-0 pb-2"><i class="bi bi-megaphone ms-3"></i> 公告：幸運轉盤活動開啟公告看這裡!</p>
+        </header>
+
+        <!-- swiper -->
+        <section class="section-swiper">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img class="img-fluid" src="images/banner/banner01.jpg" alt="banner">
+                    </div>
+                    <div class="swiper-slide"><img class="img-fluid" src="images/banner/banner02.jpg" alt="banner">
+                    </div>
+                    <div class="swiper-slide"><img class="img-fluid" src="images/banner/banner03.jpg" alt="banner">
+                    </div>
+                    <div class="swiper-slide"><img class="img-fluid" src="images/banner/banner04.jpg" alt="banner">
+                    </div>
+                    <div class="swiper-slide"><img class="img-fluid" src="images/banner/banner05.jpg" alt="banner">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next text-white"></div>
+                <div class="swiper-button-prev text-white"></div>
+            </div>
+        </section>
+        <!-- JP -->
+        <section class="jp-bg d-flex justify-content-center">
+            <div class="d-flex justify-content-between border-color py-2">
+                <p class="mb-0 pe-4 jp-color fw-bold">EGT JP</p>
+                <p class="mb-0 pe-2 fw-bold">1091179.57</p>
+            </div>
+            <div class="d-flex justify-content-between py-2">
+                <p class="mb-0 ps-2 jp-color fw-bold">15輪JP</p>
+                <p class="mb-0 ps-4 fw-bold">1091179.57</p>
+            </div>
+        </section>
+        <!-- Leaderboard -->
+        <section class="section-leaderboard">
+            <ul class="list-unstyled d-flex bg-dark mb-0">
+                <li class="ms-4">
+                    <a class="text-decoration-none text-white" href="#"><img class="img-fluid"
+                            src="images/button/icon_leaderboard.png" alt=""></a>
+                </li>
+                <li class="ms-4">
+                    <a class="position-relative text-decoration-none text-white d-block d-flex flex-column align-items-center"
+                        href="#">
+                        <img class="img-fluid col-11 alert-login" src="images/button/icon_slotgame.png" alt="">
+                        <p class="mb-0 text-center position-absolute leaderboard-p">老虎機</p>
+                    </a>
+                </li>
+                <li>
+                    <img src="images/footer/line.png" alt="">
+                </li>
+                <li>
+                    <a class="position-relative text-decoration-none text-white d-block d-flex flex-column align-items-center"
+                        href="#">
+                        <img class="img-fluid col-11 alert-login" src="images/button/icon_r220.png" alt="">
+                        <p class="mb-0 text-center position-absolute leaderboard-p">百家樂</p>
+                    </a>
+                </li>
+                <li>
+                    <img src="images/footer/line.png" alt="">
+                </li>
+                <li>
+                    <a class="position-relative text-decoration-none text-white d-block d-flex flex-column align-items-center"
+                        href="#">
+                        <img class="img-fluid col-11 alert-login" src="images/button/icon_15w.png" alt="">
+                        <p class="mb-0 text-center position-absolute leaderboard-p">15輪</p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <!-- main -->
+    <main class="main pb-1 container-fluid">
+        <ul class="row row-cols-3 g-2 list-unstyled">
+            <li class="position-relative col py-2 px-2 card-effect">
+                <a class="text-decoration-none text-white" href="#">
+                    <img class="img-fluid alert-login" src="images/game/card-effect.png" alt="">
+                    <p class="mb-0">真人撲克</p>
+                </a>
+            </li>
+            <li class="position-relative col py-2 px-2 electronic">
+                <a class="text-decoration-none text-white" href="#">
+                    <img class="img-fluid alert-login" src="images/game/electronic.png" alt="">
+                    <p class="mb-0">電子遊戲</p>
+                </a>
+            </li>
+            <li class="position-relative col py-2 px-2 esports">
+                <a class="text-decoration-none text-white" href="#">
+                    <img class="img-fluid alert-login" src="images/game/esports.png" alt="">
+                    <p class="mb-0">電競遊戲</p>
+                </a>
+            </li>
+            <li class="position-relative col py-2 px-2 fish">
+                <a class="text-decoration-none text-white" href="#">
+                    <img class="img-fluid alert-login" src="images/game/fish.png" alt="">
+                    <p class="mb-0">釣魚遊戲</p>
+                </a>
+            </li>
+            <li class="position-relative col py-2 px-2 fish_icon">
+                <a class="text-decoration-none text-white" href="#">
+                    <img class="img-fluid alert-login" src="images/game/fish_icon.png" alt="">
+                    <p class="mb-0">釣魚遊戲</p>
+                </a>
+            </li>
+            <li class="position-relative col py-2 px-2 live">
+                <a class="text-decoration-none text-white" href="#">
+                    <img class="img-fluid alert-login" src="images/game/live.png" alt="">
+                    <p class="mb-0">紙牌遊戲</p>
+                </a>
+            </li>
+            <li class="position-relative col py-2 px-2 lottory">
+                <a class="text-decoration-none text-white" href="#">
+                    <img class="img-fluid alert-login" src="images/game/lottory.png" alt="">
+                    <p class="mb-0">樂透彩票</p>
+                </a>
+            </li>
+            <li class="position-relative col py-2 px-2 mechine">
+                <a class="text-decoration-none text-white" href="#">
+                    <img class="img-fluid alert-login" src="images/game/mechine.png" alt="">
+                    <p class="mb-0">實體機台</p>
+                </a>
+            </li>
+            <li class="position-relative col py-2 px-2 sports">
+                <a class="text-decoration-none text-white" href="#">
+                    <img class="img-fluid" src="images/game/sports.png" alt="">
+                    <p class="mb-0">體育賽事</p>
+                </a>
+            </li>
+        </ul>
+    </main>
+    <!-- footer -->
+    <footer class="footer py-4 fixed-bottom btn-color">
+        <ul class="list-unstyled d-flex justify-content-evenly mb-0">
+            <li class="">
+                <p class="mb-0">
+                    <a class="text-decoration-none text-white" href="#">
+                        優惠活動
+                    </a>
+                </p>
+            </li>
+            <li>
+                <p class="mb-0">
+                    <a class="text-decoration-none text-white" href="#">
+                        會員中心
+                    </a>
+                </p>
+            </li>
+            <li>
+                <p class="mb-0">
+                    <a class="text-decoration-none text-white" href="#">
+                        線上客服
+                    </a>
+                </p>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/all.js"></script>
+</body>
+
+</html>
